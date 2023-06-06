@@ -11,6 +11,14 @@ form{
     justify-content: center;
 }
 
+.container-radio{
+    display: flex;
+}
+
+.container-radio div{
+    padding: 10px;
+}
+
 form label{
     color: #EBC181;
     font-weight: bold;

@@ -24,44 +24,47 @@
   <h2>Lista de Produtos</h2>
 
   <section class="container-table">
-  <table>
-    <thead>
+    <table>
+      <thead>
+        <tr>
+          <th>Produto</th>
+          <th>Tipo</th>
+          <th>Descricão</th>
+          <th>Valor</th>
+          <th colspan="2">Ação</th>
+        </tr>
+      </thead>
+      <tbody>
       <tr>
-        <th>Produto</th>
-        <th>Tipo</th>
-        <th>Descricão</th>
-        <th>Valor</th>
-        <th colspan="2">Ação</th>
+        <td>Bife</td>
+        <td>Almoço</td>
+        <td>Delicioso prato</td>
+        <td>R$ 25,00</td>
+        <td><a class="botao-editar" href="editar-produto.html">Editar</a></td>
+        <td><a class="botao-excluir" href="#">Excluir</a></td>
       </tr>
-    </thead>
-    <tbody>
-    <tr>
-      <td>Bife</td>
-      <td>Almoço</td>
-      <td>Delicioso prato</td>
-      <td>R$ 25,00</td>
-      <td><a class="botao-editar" href="editar-produto.html">Editar</a></td>
-      <td><a class="botao-excluir" href="#">Excluir</a></td>
-    </tr>
-    <tr>
-      <td>Frango</td>
-      <td>Almoço</td>
-      <td>Delicioso prato</td>
-      <td>R$ 25,00</td>
-      <td><a class="botao-editar" href="editar-produto.html">Editar</a></td>
-      <td><a class="botao-excluir" href="#">Excluir</a></td>
-    </tr>
-    <tr>
-      <td>Café Gelado</td>
-      <td>Café</td>
-      <td>Delicioso prato</td>
-      <td>R$ 25,00</td>
-      <td><a class="botao-editar" href="editar-produto.html">Editar</a></td>
-      <td><a class="botao-excluir" href="#">Excluir</a></td>
-    </tr>
-    </tbody>
-  </table>
-    <a class="botao-cadastrar" href="cadastrar-produto.html">Cadastrar produto</a>
+      <tr>
+        <td>Frango</td>
+        <td>Almoço</td>
+        <td>Delicioso prato</td>
+        <td>R$ 25,00</td>
+        <td><a class="botao-editar" href="editar-produto.html">Editar</a></td>
+        <td><a class="botao-excluir" href="#">Excluir</a></td>
+      </tr>
+      <tr>
+        <td>Café Gelado</td>
+        <td>Café</td>
+        <td>Delicioso prato</td>
+        <td>R$ 25,00</td>
+        <td><a class="botao-editar" href="editar-produto.html">Editar</a></td>
+        <td><a class="botao-excluir" href="#">Excluir</a></td>
+      </tr>
+      </tbody>
+    </table>
+  <a class="botao-cadastrar" href="cadastrar-produto.html">Cadastrar produto</a>
+  <form action="#" method="post">
+    <input type="submit" class="botao-cadastrar" value="Baixar Relatório"/>
+  </form>
   </section>
 </main>
 </body>
