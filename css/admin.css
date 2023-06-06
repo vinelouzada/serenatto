@@ -78,16 +78,19 @@ table td{
     font-size: 20px;
 }
 
-table tbody tr td a, .botao-cadastrar{
+table tbody tr td a, .botao-cadastrar, .botao-excluir{
     padding: 3px 10px;
     border-radius: 10px;
     color: #FFFFFF;
     text-decoration: none;
     margin: 0 5px;
     transition: 0.7s;
+    border: none;
+    font-size: 18px;
 }
 
-table tbody tr td a:hover, .botao-cadastrar:hover{
+
+table tbody tr td a:hover, .botao-cadastrar:hover, .botao-excluir:hover{
     cursor: pointer;
     filter: saturate(150%);
 }
