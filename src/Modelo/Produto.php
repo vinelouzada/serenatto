@@ -25,6 +25,13 @@ class Produto
     }
 
 
+    public function setImagem(string $imagem): void
+    {
+        $this->imagem = $imagem;
+    }
+
+
+
     public function getTipo(): string
     {
         return $this->tipo;

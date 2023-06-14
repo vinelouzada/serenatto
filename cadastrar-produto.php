@@ -12,6 +12,11 @@
             $_POST['preco']
         );
 
+        if (isset($_FILES['imagem'])){
+            $produto->setImagem(uniqid() . $_FILES['imagem']['name']);
+            move_uploaded_file($_FILES['imagem']['tmp_name'], $produto->getImagemDiretorio());
+        }
+
         $produtoRepositorio = new ProdutoRepositorio($pdo);
         $produtoRepositorio->salvar($produto);
 
@@ -49,7 +54,7 @@
         <img class= "ornaments" src="img/ornaments-coffee.png" alt="ornaments">
     </section>
     <section class="container-form">
-        <form method="post">
+        <form method="post" enctype="multipart/form-data">
 
             <label for="nome">Nome</label>
             <input name="nome" type="text" id="nome" placeholder="Digite o nome do produto" required>
@@ -70,7 +75,7 @@
             <input name="preco" type="text" id="preco" placeholder="Digite uma descrição" required>
 
             <label for="imagem">Envie uma imagem do produto</label>
-            <input type="file" accept="image/*" id="imagem" placeholder="Envie uma imagem">
+            <input type="file" name="imagem" accept="image/*" id="imagem" placeholder="Envie uma imagem">
 
             <input name="cadastro" type="submit" class="botao-cadastrar" value="Cadastrar produto"/>
         </form>
